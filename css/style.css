@@ -1,0 +1,36 @@
+.scrollToTop{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #b5b5c8;
+    transition: 0.2s ease;
+    border-top: 1px solid rgba(255,255,255,0.6); 
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.scrollToTop:hover {
+    color: white;
+    border-color: #b4a08c;
+    transition: 0.2s ease;
+    line-height: 28px;
+}
+.fa-chevron-left {
+    position: absolute;
+    top: 50%;
+    color: white;
+}
+.fa-chevron-right {
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+}
+
+.container-fluid {
+padding: 0px !important;
+}

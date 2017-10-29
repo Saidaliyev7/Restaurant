@@ -1,0 +1,469 @@
+body {
+  font-family: 'Raleway', sans-serif; }
+
+.Navigation {
+  padding: 50px 0px; }
+  .Navigation ul {
+    display: inline-block;
+    list-style: none; }
+    .Navigation ul li {
+      display: inline-block; }
+      .Navigation ul li a {
+        text-decoration: none;
+        padding: 0 30px;
+        font-size: 14px;
+        line-height: 50px;
+        font-weight: 400;
+        color: #8b8b96;
+        transition: 0.25 ease-in-out; }
+        .Navigation ul li a:hover {
+          color: #b4a08c;
+          transition: 0.25 ease-in-out; }
+  .Navigation #reservationBtn {
+    text-decoration: none;
+    float: right;
+    color: #8b8b96;
+    line-height: 50px;
+    padding: 0px 36px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #8b8b96;
+    transition: 0.25 ease-in-out; }
+    .Navigation #reservationBtn:hover {
+      border: 1px solid #b4a08c;
+      color: #b4a08c;
+      transition: 0.25 ease-in-out; }
+
+@media screen and (max-width: 575px) {
+  .NavigationReservation {
+    text-align: center; }
+    .NavigationReservation #reservationBtn {
+      float: none !important;
+      padding: 20px; } }
+.DeliciousFood .DeliciousFoodAbout {
+  padding-right: 30px; }
+  .DeliciousFood .DeliciousFoodAbout h2 {
+    font-family: 'Playfair' Display;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 48px;
+    padding-bottom: 50px;
+    position: relative; }
+    .DeliciousFood .DeliciousFoodAbout h2::before {
+      content: '';
+      position: absolute;
+      bottom: 14%;
+      left: 0%;
+      width: 72px;
+      height: 1px;
+      background-color: rgba(50, 50, 70, 0.2); }
+  .DeliciousFood .DeliciousFoodAbout p {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(50, 50, 70, 0.6); }
+  .DeliciousFood .DeliciousFoodAbout ul {
+    list-style: none; }
+    .DeliciousFood .DeliciousFoodAbout ul li {
+      display: inline-block; }
+      .DeliciousFood .DeliciousFoodAbout ul li a {
+        text-decoration: none;
+        padding: 13px 36px;
+        line-height: 60px;
+        font-size: 15px;
+        color: black;
+        border: 1px solid rgba(50, 50, 70, 0.2);
+        border-radius: 1px;
+        transition: all .25s ease-in-out 0s; }
+        .DeliciousFood .DeliciousFoodAbout ul li a:hover {
+          transition: all .25s ease-in-out 0s;
+          border-color: #b4a08c; }
+.DeliciousFood .DeliciousFoodImage {
+  position: relative; }
+  .DeliciousFood .DeliciousFoodImage img {
+    width: 100%;
+    height: 100%; }
+  .DeliciousFood .DeliciousFoodImage::before {
+    content: "";
+    width: 10%;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: -4%; }
+  .DeliciousFood .DeliciousFoodImage::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.33);
+    position: absolute;
+    top: 0%; }
+
+@media screen and (max-width: 575px) {
+  .DeliciousFoodAbout ul {
+    text-align: center; } }
+.Menu {
+  padding-top: 50px; }
+  .Menu .MenuHead {
+    padding-bottom: 50px;
+    text-align: center; }
+    .Menu .MenuHead h2 {
+      display: inline-block;
+      font-size: 27px;
+      opacity: 0.8;
+      cursor: pointer;
+      transition: 0.3s ease; }
+      .Menu .MenuHead h2:hover {
+        transition: 0.3s ease;
+        border-bottom: 1px solid;
+        border-bottom-color: #b4a08c; }
+  .Menu .MenuAbout {
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer; }
+    .Menu .MenuAbout img {
+      width: 100%;
+      height: 100%; }
+    .Menu .MenuAbout::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.33);
+      position: absolute;
+      top: 0%;
+      transition: 0.3s ease-in-out; }
+    .Menu .MenuAbout span {
+      position: absolute;
+      top: 44%;
+      color: white;
+      left: 30%;
+      font-size: 25px;
+      z-index: 15;
+      transition: 0.3s ease-in-out; }
+    .Menu .MenuAbout:hover::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.73);
+      position: absolute;
+      top: 0%;
+      transition: 0.3s ease-in-out; }
+    .Menu .MenuAbout:hover span {
+      transform: translateY(-10px);
+      transition: 0.3s ease-in-out;
+      border-bottom: 1px solid #b4a08c; }
+  .Menu #drink {
+    width: 100%;
+    height: 87%;
+    border: 1px solid rgba(0, 0, 0, 0.253); }
+    .Menu #drink span {
+      color: black;
+      left: 34%; }
+    .Menu #drink::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      position: absolute;
+      top: 0%;
+      transition: 0.3s ease-in-out; }
+  .Menu .MenuBlog {
+    margin: 0px auto;
+    padding: 75px; }
+    .Menu .MenuBlog a {
+      text-decoration: none;
+      padding: 18px 36px;
+      font-size: 15px;
+      color: black;
+      border: 1px solid;
+      border-color: rgba(50, 50, 70, 0.2);
+      border-radius: 1px;
+      transition: all .25s ease-in-out 0s; }
+      .Menu .MenuBlog a:hover {
+        border-color: #b4a08c;
+        padding: 18px 50px; }
+
+@media screen and (max-width: 575px) {
+  #drink {
+    height: 240px !important; } }
+.News {
+  padding: 50px 0px; }
+  .News .RecentNews {
+    padding: 50px 0px; }
+    .News .RecentNews h2 {
+      display: inline-block;
+      font-size: 27px;
+      opacity: 0.8;
+      cursor: pointer;
+      transition: 0.3s ease; }
+      .News .RecentNews h2:hover {
+        border-bottom: 1px solid;
+        border-bottom-color: #b4a08c;
+        transition: 0.3s ease; }
+    .News .RecentNews::before {
+      content: '';
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      margin-left: -36px;
+      width: 72px;
+      height: 1px;
+      background-color: rgba(50, 50, 70, 0.2); }
+  .News .NewsContent img {
+    width: 100%; }
+  .News .NewsContent ul {
+    list-style: none; }
+    .News .NewsContent ul li {
+      padding: 0px 5px;
+      display: inline-block; }
+      .News .NewsContent ul li a {
+        font-size: 11px;
+        text-decoration: none;
+        color: #b4a08c;
+        transition: 0.3s ease; }
+        .News .NewsContent ul li a:hover {
+          color: black;
+          border-bottom: 1px solid;
+          border-bottom-color: #b4a08c;
+          transition: 0.3s ease; }
+  .News .NewsContent h3 {
+    text-align: center; }
+    .News .NewsContent h3 a {
+      text-decoration: none;
+      border-bottom: 1px solid;
+      border-bottom-color: black;
+      color: black;
+      transition: 0.2s ease; }
+      .News .NewsContent h3 a:hover {
+        transition: 0.2s ease;
+        color: #b4a08c;
+        border-bottom-color: #b4a08c; }
+  .News .NewsContent p {
+    text-align: center;
+    color: #c1c1c7; }
+  .News .NewsContent #Date {
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #c1c1c7;
+    border-top: 1px solid #c1c1c7; }
+    .News .NewsContent #Date p {
+      display: inline-block;
+      margin: 0px !important;
+      color: #c1c1c7;
+      transition: 0.2s ease; }
+      .News .NewsContent #Date p:hover {
+        transition: 0.2s ease;
+        color: #b4a08c;
+        border-bottom: 1px solid;
+        border-bottom-color: #b4a08c; }
+  .News .NewsContent #View {
+    font-size: 14px;
+    text-decoration: none; }
+    .News .NewsContent #View p {
+      transition: 0.2s ease; }
+      .News .NewsContent #View p i {
+        transition: 0.2s ease; }
+      .News .NewsContent #View p:hover {
+        transition: 0.2s ease;
+        color: #b4a08c; }
+        .News .NewsContent #View p:hover i {
+          transition: 0.2s ease;
+          padding-left: 5px; }
+  .News .NewsBlog {
+    margin: 0px auto;
+    padding: 75px 0px; }
+    .News .NewsBlog a {
+      text-decoration: none;
+      padding: 18px 36px;
+      font-size: 15px;
+      color: black;
+      border: 1px solid;
+      border-color: rgba(50, 50, 70, 0.2);
+      border-radius: 1px;
+      transition: all .25s ease-in-out 0s; }
+      .News .NewsBlog a:hover {
+        border-color: #b4a08c;
+        padding: 18px 50px; }
+
+.Events {
+  padding-bottom: 100px; }
+  .Events .UpcomingEvents {
+    padding: 50px 0px; }
+    .Events .UpcomingEvents h2 {
+      display: inline-block;
+      font-size: 27px;
+      opacity: 0.8;
+      cursor: pointer;
+      transition: 0.3s ease; }
+      .Events .UpcomingEvents h2:hover {
+        border-bottom: 1px solid;
+        border-bottom-color: #b4a08c;
+        transition: 0.3s ease; }
+    .Events .UpcomingEvents::before {
+      content: '';
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      margin-left: -36px;
+      width: 72px;
+      height: 1px;
+      background-color: rgba(50, 50, 70, 0.2); }
+  .Events .EventsContent img {
+    width: 100%; }
+  .Events .EventsContent h4 {
+    color: #b4a08c;
+    text-align: center; }
+  .Events .EventsContent h3 {
+    text-align: center; }
+    .Events .EventsContent h3 a {
+      text-decoration: none;
+      border-bottom: 1px solid;
+      border-bottom-color: black;
+      color: black;
+      transition: 0.2s ease; }
+      .Events .EventsContent h3 a:hover {
+        transition: 0.2s ease;
+        color: #b4a08c;
+        border-bottom-color: #b4a08c; }
+  .Events .EventsContent p {
+    text-align: center;
+    color: #c1c1c7; }
+  .Events .EventsContent #Date {
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #c1c1c7;
+    border-top: 1px solid #c1c1c7; }
+    .Events .EventsContent #Date p {
+      display: inline-block;
+      margin: 0px !important;
+      color: #c1c1c7;
+      transition: 0.2s ease; }
+      .Events .EventsContent #Date p:hover {
+        transition: 0.2s ease;
+        color: #b4a08c;
+        border-bottom: 1px solid;
+        border-bottom-color: #b4a08c; }
+  .Events .EventsContent #View {
+    font-size: 14px;
+    text-decoration: none; }
+    .Events .EventsContent #View p {
+      transition: 0.2s ease; }
+      .Events .EventsContent #View p i {
+        transition: 0.2s ease; }
+      .Events .EventsContent #View p:hover {
+        transition: 0.2s ease;
+        color: #b4a08c; }
+        .Events .EventsContent #View p:hover i {
+          transition: 0.2s ease;
+          padding-left: 5px; }
+  .Events .EventsBlog {
+    margin: 0px auto;
+    padding: 75px 0px; }
+    .Events .EventsBlog a {
+      text-decoration: none;
+      padding: 18px 36px;
+      font-size: 15px;
+      color: black;
+      border: 1px solid;
+      border-color: rgba(50, 50, 70, 0.2);
+      border-radius: 1px;
+      transition: all .25s ease-in-out 0s; }
+      .Events .EventsBlog a:hover {
+        border-color: #b4a08c;
+        padding: 18px 50px; }
+
+.End {
+  position: relative;
+  padding: 30px 0px 100px 0px;
+  background-color: #323246; }
+  .End .EndDestination {
+    padding-top: 20px; }
+    .End .EndDestination i {
+      opacity: 0.6;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      padding: 8px 16px;
+      border-radius: 1px;
+      display: inline-block;
+      color: white;
+      transition: 0.2s ease;
+      cursor: pointer; }
+      .End .EndDestination i:hover {
+        transition: 0.2s ease;
+        opacity: 1;
+        border-color: #b4a08c; }
+    .End .EndDestination p {
+      color: white;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+      transition: 0.2s ease; }
+      .End .EndDestination p:hover {
+        transition: 0.2s ease;
+        color: white;
+        border-color: #b4a08c; }
+  .End img {
+    width: 65%;
+    cursor: pointer; }
+  .End .EndIcons {
+    padding: 5px 0px; }
+    .End .EndIcons ul {
+      float: right;
+      list-style: none; }
+      .End .EndIcons ul li {
+        display: inline-block; }
+        .End .EndIcons ul li i {
+          padding: 15px;
+          color: white;
+          opacity: 0.6;
+          transition: 0.4s  ease;
+          cursor: pointer; }
+          .End .EndIcons ul li i:hover {
+            opacity: 1;
+            transition: 0.4s  ease;
+            border-bottom: 1px solid #b4a08c; }
+        .End .EndIcons ul li .fa-envelope {
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          transition: 0.4s  ease; }
+          .End .EndIcons ul li .fa-envelope:hover {
+            transition: 0.4s  ease;
+            border-bottom: 1px solid #b4a08c; }
+        .End .EndIcons ul li .fa-phone {
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          transition: 0.4s  ease; }
+          .End .EndIcons ul li .fa-phone:hover {
+            transition: 0.4s  ease;
+            border-bottom: 1px solid #b4a08c; }
+  .End .EndNavigation {
+    padding-top: 50px; }
+    .End .EndNavigation ul {
+      display: inline-block;
+      list-style: none; }
+      .End .EndNavigation ul li {
+        display: inline-block; }
+        .End .EndNavigation ul li a {
+          text-decoration: none;
+          padding: 0 30px;
+          font-size: 14px;
+          line-height: 50px;
+          font-weight: 400;
+          color: #8b8b96;
+          transition: 0.25 ease-in-out; }
+          .End .EndNavigation ul li a:hover {
+            color: #b4a08c;
+            transition: 0.25 ease-in-out; }
+
+@media screen and (max-width: 575px) {
+  .EndDestination {
+    text-align: center; }
+
+  .EndIcons {
+    text-align: center; }
+    .EndIcons ul {
+      float: none !important; } }
+
+/*# sourceMappingURL=index.css.map */

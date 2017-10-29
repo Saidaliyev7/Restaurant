@@ -1,0 +1,36 @@
+.Header {
+    padding: 100px 0px;
+    background-image: url(../img/header/slide1.jpg);
+    .EndDestination {
+        padding-top: 20px;
+        i {
+            opacity: 0.6;
+            border: 1px solid rgba(255,255,255,0.6);
+            padding: 8px 16px;
+            border-radius: 1px;
+            display: inline-block;
+            color: white;
+            transition: 0.2s ease;
+            cursor: pointer;
+            &:hover {
+                transition: 0.2s ease;
+                opacity: 1;
+                border-color: $secondaryColor;
+            }
+        }
+        p {
+            color: white;
+            display: inline-block;
+            color: rgba(255,255,255,0.6);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            cursor: pointer;
+            transition: 0.2s ease;
+            &:hover {
+                transition: 0.2s ease;
+                color: rgba(255,255,255,1);
+                border-color: $secondaryColor;
+            }
+        }
+ 
+    }
+}

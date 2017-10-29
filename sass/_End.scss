@@ -1,0 +1,120 @@
+.End {
+    position: relative;
+    padding: 30px 0px 100px 0px;
+    background-color: rgb(50, 50, 70);
+    .EndDestination {
+        padding-top: 20px;
+        i {
+            opacity: 0.6;
+            border: 1px solid rgba(255,255,255,0.6);
+            padding: 8px 16px;
+            border-radius: 1px;
+            display: inline-block;
+            color: white;
+            transition: 0.2s ease;
+            cursor: pointer;
+            &:hover {
+                transition: 0.2s ease;
+                opacity: 1;
+                border-color: $secondaryColor;
+            }
+        }
+        p {
+            color: white;
+            display: inline-block;
+            color: rgba(255,255,255,0.6);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            cursor: pointer;
+            transition: 0.2s ease;
+            &:hover {
+                transition: 0.2s ease;
+                color: rgba(255,255,255,1);
+                border-color: $secondaryColor;
+            }
+        }
+ 
+    }
+   
+    img {
+        width: 65%;
+        cursor: pointer;
+    }
+    .EndIcons {
+        padding: 5px 0px;
+        ul {
+            float: right;
+             list-style: none;
+             li {
+                 display: inline-block;
+                 i {
+                     padding: 15px;
+                     color: white;
+                     opacity:0.6;
+                     transition: 0.4s  ease;
+                     cursor: pointer;
+                   &:hover {
+                       opacity: 1;
+                       transition: 0.4s  ease;
+                       border-bottom: 1px solid $secondaryColor;
+                   }
+                 }
+                 .fa-envelope {
+                     border: 1px solid rgba(255,255,255,0.6);
+                     transition: 0.4s  ease;
+                     &:hover {
+                        transition: 0.4s  ease;
+                        border-bottom: 1px solid $secondaryColor;
+                     }
+                 }
+                 .fa-phone {
+                    border: 1px solid rgba(255,255,255,0.6);
+                    transition: 0.4s  ease;
+                    &:hover {
+                       transition: 0.4s  ease;
+                       border-bottom: 1px solid $secondaryColor;
+                    }
+                }
+             }
+        }
+    
+    }
+    .EndNavigation {
+        padding-top: 50px;
+        ul {
+            display: inline-block;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    padding: 0 30px;
+                    font-size: 14px;
+                    line-height: 50px;
+                    font-weight: 400;
+                    color: #8b8b96;
+                    transition: 0.25 ease-in-out;
+                    &:hover{
+                        color: $secondaryColor;
+                        transition: 0.25 ease-in-out;
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:575px) {
+    .EndDestination {
+        text-align: center;
+       
+        
+    }
+    .EndIcons  {
+       text-align: center;
+       ul {
+        float: none !important;
+    }
+    }
+
+}
