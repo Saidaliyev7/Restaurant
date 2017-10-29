@@ -14,9 +14,10 @@ body {
     top: 0%;
     z-index: 2; }
   .Header .HeaderImageContent {
-    position: absolute;
-    top: 50%;
-    left: 32%;
+    position: relative;
+    top: 20%;
+    left: 0%;
+    width: 100%;
     color: white;
     z-index: 50; }
     .Header .HeaderImageContent h2 {
@@ -45,6 +46,8 @@ body {
     padding-top: 50px;
     position: relative;
     z-index: 6; }
+    .Header .HeaderMain img {
+      width: 70%; }
     .Header .HeaderMain .EndDestination {
       padding-top: 20px; }
       .Header .HeaderMain .EndDestination i {

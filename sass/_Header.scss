@@ -12,9 +12,10 @@
         z-index: 2;
     }
     .HeaderImageContent {
-        position: absolute;
-        top: 50%;
-        left: 32%;
+        position: relative;
+        top: 20%;
+        left: 0%;
+        width: 100%;
         color: white;
         z-index: 50;
         h2 {
@@ -51,6 +52,9 @@
         padding-top: 50px;
         position: relative;
         z-index: 6;
+        img {
+            width: 70%;
+        }
         .EndDestination {
             padding-top: 20px;
             i {
