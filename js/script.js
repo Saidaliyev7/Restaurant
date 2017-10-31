@@ -11,15 +11,12 @@ $(document).ready(function () {
         autoplay:true,
         responsiveClass:true,
        items:1
+    });
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();  
+         var classOfset = $('.DeliciousFood').offset().top;
+        if (scroll >= classOfset-500) {
+            $('.DeliciousFood').addClass();
+        } 
     })
-
-    var x =
-
-$(window).scroll(function() {
-   $('body').animate({
-       scrollTop:$('.DeliciousFood').offset().top;
-   })
-    
-})
-
 });
