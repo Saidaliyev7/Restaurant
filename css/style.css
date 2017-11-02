@@ -31,7 +31,17 @@
     right: 0%;
 }
 
-.xxx {
+.conteinerWidth {
 max-width: 1300px;
 margin: 0px auto;
+}
+.transform  {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.s ease;
+}
+.transformOfset {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.4s ease;
 }

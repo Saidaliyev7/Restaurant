@@ -1,7 +1,7 @@
 .DeliciousFood {
-    opacity: 0.4;
-    transform: translateY(50);
-    tra
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.4s ease;
     .DeliciousFoodAbout {
         padding-right: 30px;
        h2 {

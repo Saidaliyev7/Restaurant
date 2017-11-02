@@ -147,64 +147,68 @@ body {
     .NavigationReservation #reservationBtn {
       float: none !important;
       padding: 20px; } }
-.DeliciousFood .DeliciousFoodAbout {
-  padding-right: 30px; }
-  .DeliciousFood .DeliciousFoodAbout h2 {
-    font-family: 'Playfair' Display;
-    font-weight: 400;
-    font-size: 37px;
-    line-height: 48px;
-    padding-bottom: 50px;
+.DeliciousFood {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.4s ease; }
+  .DeliciousFood .DeliciousFoodAbout {
+    padding-right: 30px; }
+    .DeliciousFood .DeliciousFoodAbout h2 {
+      font-family: 'Playfair' Display;
+      font-weight: 400;
+      font-size: 37px;
+      line-height: 48px;
+      padding-bottom: 50px;
+      position: relative; }
+      .DeliciousFood .DeliciousFoodAbout h2::before {
+        content: '';
+        position: absolute;
+        bottom: 14%;
+        left: 0%;
+        width: 72px;
+        height: 1px;
+        background-color: rgba(50, 50, 70, 0.2); }
+    .DeliciousFood .DeliciousFoodAbout p {
+      margin-bottom: 18px;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(50, 50, 70, 0.6); }
+    .DeliciousFood .DeliciousFoodAbout ul {
+      list-style: none; }
+      .DeliciousFood .DeliciousFoodAbout ul li {
+        display: inline-block; }
+        .DeliciousFood .DeliciousFoodAbout ul li a {
+          text-decoration: none;
+          padding: 13px 36px;
+          line-height: 60px;
+          font-size: 15px;
+          color: black;
+          border: 1px solid rgba(50, 50, 70, 0.2);
+          border-radius: 1px;
+          transition: all .25s ease-in-out 0s; }
+          .DeliciousFood .DeliciousFoodAbout ul li a:hover {
+            transition: all .25s ease-in-out 0s;
+            border-color: #b4a08c; }
+  .DeliciousFood .DeliciousFoodImage {
     position: relative; }
-    .DeliciousFood .DeliciousFoodAbout h2::before {
-      content: '';
+    .DeliciousFood .DeliciousFoodImage img {
+      width: 100%;
+      height: 100%; }
+    .DeliciousFood .DeliciousFoodImage::before {
+      content: "";
+      width: 10%;
+      height: 80%;
+      background-color: white;
       position: absolute;
-      bottom: 14%;
-      left: 0%;
-      width: 72px;
-      height: 1px;
-      background-color: rgba(50, 50, 70, 0.2); }
-  .DeliciousFood .DeliciousFoodAbout p {
-    margin-bottom: 18px;
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(50, 50, 70, 0.6); }
-  .DeliciousFood .DeliciousFoodAbout ul {
-    list-style: none; }
-    .DeliciousFood .DeliciousFoodAbout ul li {
-      display: inline-block; }
-      .DeliciousFood .DeliciousFoodAbout ul li a {
-        text-decoration: none;
-        padding: 13px 36px;
-        line-height: 60px;
-        font-size: 15px;
-        color: black;
-        border: 1px solid rgba(50, 50, 70, 0.2);
-        border-radius: 1px;
-        transition: all .25s ease-in-out 0s; }
-        .DeliciousFood .DeliciousFoodAbout ul li a:hover {
-          transition: all .25s ease-in-out 0s;
-          border-color: #b4a08c; }
-.DeliciousFood .DeliciousFoodImage {
-  position: relative; }
-  .DeliciousFood .DeliciousFoodImage img {
-    width: 100%;
-    height: 100%; }
-  .DeliciousFood .DeliciousFoodImage::before {
-    content: "";
-    width: 10%;
-    height: 80%;
-    background-color: white;
-    position: absolute;
-    top: 10%;
-    left: -4%; }
-  .DeliciousFood .DeliciousFoodImage::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.33);
-    position: absolute;
-    top: 0%; }
+      top: 10%;
+      left: -4%; }
+    .DeliciousFood .DeliciousFoodImage::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.33);
+      position: absolute;
+      top: 0%; }
 
 @media screen and (max-width: 575px) {
   .DeliciousFoodAbout ul {
@@ -239,14 +243,23 @@ body {
       position: absolute;
       top: 0%;
       transition: 0.3s ease-in-out; }
-    .Menu .MenuAbout span {
+    .Menu .MenuAbout .MenuAboutContent {
       position: absolute;
-      top: 44%;
-      color: white;
-      left: 30%;
-      font-size: 25px;
-      z-index: 15;
-      transition: 0.3s ease-in-out; }
+      z-index: 50;
+      width: 100%;
+      height: 100%;
+      top: 0; }
+      .Menu .MenuAbout .MenuAboutContent span {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        line-height: 200px;
+        top: 44%;
+        color: white;
+        font-size: 25px;
+        z-index: 15;
+        transition: 0.3s ease-in-out; }
     .Menu .MenuAbout:hover::after {
       content: "";
       width: 100%;
@@ -294,7 +307,10 @@ body {
   #drink {
     height: 240px !important; } }
 .News {
-  padding: 50px 0px; }
+  padding: 50px 0px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.4s ease; }
   .News .RecentNews {
     padding: 50px 0px; }
     .News .RecentNews h2 {
@@ -316,68 +332,77 @@ body {
       width: 72px;
       height: 1px;
       background-color: rgba(50, 50, 70, 0.2); }
-  .News .NewsContent img {
-    width: 100%; }
-  .News .NewsContent ul {
-    list-style: none; }
-    .News .NewsContent ul li {
-      padding: 0px 5px;
-      display: inline-block; }
-      .News .NewsContent ul li a {
-        font-size: 11px;
-        text-decoration: none;
-        color: #b4a08c;
-        transition: 0.3s ease; }
-        .News .NewsContent ul li a:hover {
-          color: black;
-          border-bottom: 1px solid;
-          border-bottom-color: #b4a08c;
+  .News .NewsContent {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.4s ease; }
+    .News .NewsContent img {
+      width: 100%; }
+    .News .NewsContent ul {
+      padding: 13px 0px;
+      margin-bottom: 0px;
+      text-align: center;
+      list-style: none; }
+      .News .NewsContent ul li {
+        padding: 0px 5px;
+        display: inline-block; }
+        .News .NewsContent ul li a {
+          font-size: 11px;
+          text-decoration: none;
+          color: #b4a08c;
           transition: 0.3s ease; }
-  .News .NewsContent h3 {
-    text-align: center; }
-    .News .NewsContent h3 a {
-      text-decoration: none;
-      border-bottom: 1px solid;
-      border-bottom-color: black;
-      color: black;
-      transition: 0.2s ease; }
-      .News .NewsContent h3 a:hover {
-        transition: 0.2s ease;
-        color: #b4a08c;
-        border-bottom-color: #b4a08c; }
-  .News .NewsContent p {
-    text-align: center;
-    color: #c1c1c7; }
-  .News .NewsContent #Date {
-    padding: 10px 0px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    border-bottom: 1px solid #c1c1c7;
-    border-top: 1px solid #c1c1c7; }
-    .News .NewsContent #Date p {
-      display: inline-block;
-      margin: 0px !important;
-      color: #c1c1c7;
-      transition: 0.2s ease; }
-      .News .NewsContent #Date p:hover {
-        transition: 0.2s ease;
-        color: #b4a08c;
+          .News .NewsContent ul li a:hover {
+            color: black;
+            border-bottom: 1px solid;
+            border-bottom-color: #b4a08c;
+            transition: 0.3s ease; }
+    .News .NewsContent h3 {
+      text-align: center; }
+      .News .NewsContent h3 a {
+        text-decoration: none;
         border-bottom: 1px solid;
-        border-bottom-color: #b4a08c; }
-  .News .NewsContent #View {
-    font-size: 14px;
-    text-decoration: none; }
-    .News .NewsContent #View p {
-      transition: 0.2s ease; }
-      .News .NewsContent #View p i {
+        border-bottom-color: black;
+        color: black;
         transition: 0.2s ease; }
-      .News .NewsContent #View p:hover {
-        transition: 0.2s ease;
-        color: #b4a08c; }
-        .News .NewsContent #View p:hover i {
+        .News .NewsContent h3 a:hover {
           transition: 0.2s ease;
-          padding-left: 5px; }
+          color: #b4a08c;
+          border-bottom-color: #b4a08c; }
+    .News .NewsContent p {
+      text-align: center;
+      color: #c1c1c7; }
+    .News .NewsContent #Date {
+      padding: 10px 0px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid #c1c1c7;
+      border-top: 1px solid #c1c1c7; }
+      .News .NewsContent #Date p {
+        display: inline-block;
+        margin: 0px !important;
+        color: #c1c1c7;
+        transition: 0.2s ease; }
+        .News .NewsContent #Date p:hover {
+          transition: 0.2s ease;
+          color: #b4a08c;
+          border-bottom: 1px solid;
+          border-bottom-color: #b4a08c; }
+    .News .NewsContent #View {
+      font-size: 14px;
+      text-decoration: none; }
+      .News .NewsContent #View p {
+        margin: 0px;
+        padding: 15px 0px;
+        transition: 0.2s ease; }
+        .News .NewsContent #View p i {
+          transition: 0.2s ease; }
+        .News .NewsContent #View p:hover {
+          transition: 0.2s ease;
+          color: #b4a08c; }
+          .News .NewsContent #View p:hover i {
+            transition: 0.2s ease;
+            padding-left: 5px; }
   .News .NewsBlog {
     margin: 0px auto;
     padding: 75px 0px; }
@@ -395,7 +420,10 @@ body {
         padding: 18px 50px; }
 
 .Events {
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.4s ease; }
   .Events .UpcomingEvents {
     padding: 50px 0px; }
     .Events .UpcomingEvents h2 {
@@ -417,56 +445,65 @@ body {
       width: 72px;
       height: 1px;
       background-color: rgba(50, 50, 70, 0.2); }
-  .Events .EventsContent img {
-    width: 100%; }
-  .Events .EventsContent h4 {
-    color: #b4a08c;
-    text-align: center; }
-  .Events .EventsContent h3 {
-    text-align: center; }
-    .Events .EventsContent h3 a {
-      text-decoration: none;
-      border-bottom: 1px solid;
-      border-bottom-color: black;
-      color: black;
-      transition: 0.2s ease; }
-      .Events .EventsContent h3 a:hover {
-        transition: 0.2s ease;
-        color: #b4a08c;
-        border-bottom-color: #b4a08c; }
-  .Events .EventsContent p {
-    text-align: center;
-    color: #c1c1c7; }
-  .Events .EventsContent #Date {
-    padding: 10px 0px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    border-bottom: 1px solid #c1c1c7;
-    border-top: 1px solid #c1c1c7; }
-    .Events .EventsContent #Date p {
-      display: inline-block;
-      margin: 0px !important;
-      color: #c1c1c7;
-      transition: 0.2s ease; }
-      .Events .EventsContent #Date p:hover {
-        transition: 0.2s ease;
-        color: #b4a08c;
+  .Events .EventsContent {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.4s ease; }
+    .Events .EventsContent img {
+      width: 100%; }
+    .Events .EventsContent h4 {
+      color: #b4a08c;
+      text-align: center;
+      font-size: 15px;
+      margin: 0px;
+      padding: 15px 0px; }
+    .Events .EventsContent h3 {
+      text-align: center; }
+      .Events .EventsContent h3 a {
+        text-decoration: none;
         border-bottom: 1px solid;
-        border-bottom-color: #b4a08c; }
-  .Events .EventsContent #View {
-    font-size: 14px;
-    text-decoration: none; }
-    .Events .EventsContent #View p {
-      transition: 0.2s ease; }
-      .Events .EventsContent #View p i {
+        border-bottom-color: black;
+        color: black;
         transition: 0.2s ease; }
-      .Events .EventsContent #View p:hover {
-        transition: 0.2s ease;
-        color: #b4a08c; }
-        .Events .EventsContent #View p:hover i {
+        .Events .EventsContent h3 a:hover {
           transition: 0.2s ease;
-          padding-left: 5px; }
+          color: #b4a08c;
+          border-bottom-color: #b4a08c; }
+    .Events .EventsContent p {
+      text-align: center;
+      color: #c1c1c7; }
+    .Events .EventsContent #Date {
+      padding: 10px 0px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid #c1c1c7;
+      border-top: 1px solid #c1c1c7; }
+      .Events .EventsContent #Date p {
+        display: inline-block;
+        margin: 0px !important;
+        color: #c1c1c7;
+        transition: 0.2s ease; }
+        .Events .EventsContent #Date p:hover {
+          transition: 0.2s ease;
+          color: #b4a08c;
+          border-bottom: 1px solid;
+          border-bottom-color: #b4a08c; }
+    .Events .EventsContent #View {
+      font-size: 14px;
+      text-decoration: none; }
+      .Events .EventsContent #View p {
+        margin: 0px;
+        padding: 15px 0px;
+        transition: 0.2s ease; }
+        .Events .EventsContent #View p i {
+          transition: 0.2s ease; }
+        .Events .EventsContent #View p:hover {
+          transition: 0.2s ease;
+          color: #b4a08c; }
+          .Events .EventsContent #View p:hover i {
+            transition: 0.2s ease;
+            padding-left: 5px; }
   .Events .EventsBlog {
     margin: 0px auto;
     padding: 75px 0px; }
@@ -486,7 +523,10 @@ body {
 .End {
   position: relative;
   padding: 30px 0px 100px 0px;
-  background-color: #323246; }
+  background-color: #323246;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.4s ease; }
   .End .EndDestination {
     padding-top: 20px; }
     .End .EndDestination i {
